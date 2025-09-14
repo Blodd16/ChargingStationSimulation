@@ -1,0 +1,13 @@
+ChargingStationSimulation/
+├── Models/
+├── Services/
+├── ViewModels/
+├── Views/
+├── docs/
+│   ├── index.md
+│   └── images/
+│       ├── mainwindow.png
+│       └── animatedview.gif
+├── README.md
+├── .gitignore
+└── ChargingStationSimulation.csproj
