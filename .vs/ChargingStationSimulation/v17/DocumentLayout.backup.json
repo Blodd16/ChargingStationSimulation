@@ -1,0 +1,258 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|c:\\users\\lenovo von said\\desktop\\chargingstation\\chargingstationsimulation\\views\\animatedstationview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|solutionrelative:views\\animatedstationview.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|c:\\users\\lenovo von said\\desktop\\chargingstation\\chargingstationsimulation\\views\\animatedstationview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|solutionrelative:views\\animatedstationview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|c:\\users\\lenovo von said\\desktop\\chargingstation\\chargingstationsimulation\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|solutionrelative:views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|c:\\users\\lenovo von said\\desktop\\chargingstation\\chargingstationsimulation\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|solutionrelative:app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|c:\\users\\lenovo von said\\desktop\\chargingstation\\chargingstationsimulation\\views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|solutionrelative:views\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|c:\\users\\lenovo von said\\desktop\\chargingstation\\chargingstationsimulation\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|solutionrelative:viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|c:\\users\\lenovo von said\\desktop\\chargingstation\\chargingstationsimulation\\chargingstationsimulation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|solutionrelative:chargingstationsimulation.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|c:\\users\\lenovo von said\\desktop\\chargingstation\\chargingstationsimulation\\models\\chargingstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|solutionrelative:models\\chargingstation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|c:\\users\\lenovo von said\\desktop\\chargingstation\\chargingstationsimulation\\models\\simulationstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|solutionrelative:models\\simulationstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|c:\\users\\lenovo von said\\desktop\\chargingstation\\chargingstationsimulation\\models\\simulationparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|solutionrelative:models\\simulationparameters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|c:\\users\\lenovo von said\\desktop\\chargingstation\\chargingstationsimulation\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|solutionrelative:models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|c:\\users\\lenovo von said\\desktop\\chargingstation\\chargingstationsimulation\\services\\simulationengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|solutionrelative:services\\simulationengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|c:\\users\\lenovo von said\\desktop\\chargingstation\\chargingstationsimulation\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|solutionrelative:app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|c:\\users\\lenovo von said\\desktop\\chargingstation\\chargingstationsimulation\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|solutionrelative:app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|c:\\users\\lenovo von said\\desktop\\chargingstation\\chargingstationsimulation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD53D952-BD97-410E-94A0-D62F6E3480A4}|ChargingStationSimulation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.axaml",
+              "DocumentMoniker": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\App.axaml",
+              "RelativeDocumentMoniker": "App.axaml",
+              "ToolTip": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\App.axaml",
+              "RelativeToolTip": "App.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-02T15:23:01.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\App.axaml.cs",
+              "RelativeDocumentMoniker": "App.axaml.cs",
+              "ToolTip": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\App.axaml.cs",
+              "RelativeToolTip": "App.axaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAgwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T15:04:21.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAkwCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:59:37.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "app.manifest",
+              "DocumentMoniker": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\app.manifest",
+              "RelativeDocumentMoniker": "app.manifest",
+              "ToolTip": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\app.manifest",
+              "RelativeToolTip": "app.manifest",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwBwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
+              "WhenOpened": "2025-11-02T14:55:28.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Views\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Views\\MainWindow.axaml.cs",
+              "RelativeToolTip": "Views\\MainWindow.axaml.cs",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAswBIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:53:43.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnimatedStationView.axaml",
+              "DocumentMoniker": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Views\\AnimatedStationView.axaml",
+              "RelativeDocumentMoniker": "Views\\AnimatedStationView.axaml",
+              "ToolTip": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Views\\AnimatedStationView.axaml",
+              "RelativeToolTip": "Views\\AnimatedStationView.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-01T12:51:52.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AnimatedStationView.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Views\\AnimatedStationView.axaml.cs",
+              "RelativeDocumentMoniker": "Views\\AnimatedStationView.axaml.cs",
+              "ToolTip": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Views\\AnimatedStationView.axaml.cs",
+              "RelativeToolTip": "Views\\AnimatedStationView.axaml.cs",
+              "ViewState": "AgIAAN4BAAAAAAAAAAAAAN4BAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T12:51:51.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SimulationEngine.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Services\\SimulationEngine.cs",
+              "RelativeDocumentMoniker": "Services\\SimulationEngine.cs",
+              "ToolTip": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Services\\SimulationEngine.cs",
+              "RelativeToolTip": "Services\\SimulationEngine.cs",
+              "ViewState": "AgIAACYBAAAAAAAAAAAowD4BAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T12:50:52.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SimulationStatistics.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Models\\SimulationStatistics.cs",
+              "RelativeDocumentMoniker": "Models\\SimulationStatistics.cs",
+              "ToolTip": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Models\\SimulationStatistics.cs",
+              "RelativeToolTip": "Models\\SimulationStatistics.cs",
+              "ViewState": "AgIAABIBAAAAAAAAAAAkwCkBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T12:50:13.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SimulationParameters.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Models\\SimulationParameters.cs",
+              "RelativeDocumentMoniker": "Models\\SimulationParameters.cs",
+              "ToolTip": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Models\\SimulationParameters.cs",
+              "RelativeToolTip": "Models\\SimulationParameters.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAgwIMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T12:49:47.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Models\\Vehicle.cs",
+              "RelativeDocumentMoniker": "Models\\Vehicle.cs",
+              "ToolTip": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Models\\Vehicle.cs",
+              "RelativeToolTip": "Models\\Vehicle.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAswNkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T12:49:33.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ChargingStation.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Models\\ChargingStation.cs",
+              "RelativeDocumentMoniker": "Models\\ChargingStation.cs",
+              "ToolTip": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Models\\ChargingStation.cs",
+              "RelativeToolTip": "Models\\ChargingStation.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAkwI4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T12:49:17.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChargingStationSimulation.csproj",
+              "DocumentMoniker": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\ChargingStationSimulation.csproj",
+              "RelativeDocumentMoniker": "ChargingStationSimulation.csproj",
+              "ToolTip": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\ChargingStationSimulation.csproj",
+              "RelativeToolTip": "ChargingStationSimulation.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-01T12:48:34.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Views\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "Views\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\Views\\MainWindow.axaml",
+              "RelativeToolTip": "Views\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-01T12:48:18.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindowViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainWindowViewModel.cs",
+              "ToolTip": "C:\\Users\\Lenovo von Said\\Desktop\\ChargingStation\\ChargingStationSimulation\\ViewModels\\MainWindowViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainWindowViewModel.cs",
+              "ViewState": "AgIAAEsBAAAAAAAAAAAswGQBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T12:48:13.924Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

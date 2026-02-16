@@ -1,0 +1,416 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:views="using:ChargingStationSimulation.Views"
+        x:Class="ChargingStationSimulation.Views.MainWindow"
+        Title="EV Charging Station Simulation - Professional Analytics Suite"
+        Width="1920" Height="1080"
+        WindowStartupLocation="CenterScreen"
+        Background="#0F1419">
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<!-- Top Navigation Bar -->
+		<Border Grid.Row="0" Background="#1A1F2E" Padding="20,15">
+			<Grid>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+
+				<!-- Title Section -->
+				<StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
+					<Border Background="#1ABC9C" CornerRadius="12" Width="40" Height="40" Margin="0,0,15,0">
+						<TextBlock Text="⚡" FontSize="20" HorizontalAlignment="Center" 
+								  VerticalAlignment="Center" Foreground="White"/>
+					</Border>
+					<StackPanel VerticalAlignment="Center">
+						<TextBlock Text="EV CHARGING STATION SIMULATOR" FontSize="20" FontWeight="Bold"
+								  Foreground="White" LetterSpacing="2"/>
+						<TextBlock Text="Real-time Performance Analytics &amp; Monitoring" FontSize="12"
+								  Foreground="#95A5A6" LetterSpacing="1"/>
+					</StackPanel>
+				</StackPanel>
+
+				<!-- System Status -->
+				<StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="20" VerticalAlignment="Center">
+					<Border Background="#1A252F" CornerRadius="10" Padding="15,8">
+						<StackPanel Orientation="Horizontal" Spacing="10">
+							<TextBlock Text="⏱" FontSize="14" Foreground="#3498DB"/>
+							<TextBlock Text="{Binding CurrentTimeDisplay}" FontSize="12" 
+									  FontWeight="SemiBold" Foreground="White"/>
+						</StackPanel>
+					</Border>
+					<Border Background="#1A252F" CornerRadius="10" Padding="15,8">
+						<StackPanel Orientation="Horizontal" Spacing="10">
+							<Ellipse Width="10" Height="10" Fill="#1ABC9C"/>
+							<TextBlock Text="{Binding SimulationStatus}" FontSize="12" 
+									  FontWeight="SemiBold" Foreground="White"/>
+						</StackPanel>
+					</Border>
+				</StackPanel>
+			</Grid>
+		</Border>
+
+		<!-- Main Content Area -->
+		<Grid Grid.Row="1" Margin="0,10,0,0">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="380"/>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="420"/>
+			</Grid.ColumnDefinitions>
+
+			<!-- Left Control Panel -->
+			<Border Grid.Column="0" Background="#1A1F2E" Margin="10,0,5,10" CornerRadius="15">
+				<ScrollViewer Padding="20">
+					<StackPanel Spacing="20">
+
+						<!-- Control Buttons -->
+						<StackPanel Spacing="12">
+							<TextBlock Text="SIMULATION CONTROL" FontSize="14" FontWeight="Bold"
+									  Foreground="#1ABC9C" Margin="0,0,0,10"/>
+
+							<Button Command="{Binding StartSimulationCommand}" 
+									Height="50" CornerRadius="10" Classes="primary-button">
+								<StackPanel Orientation="Horizontal" Spacing="10">
+									<TextBlock Text="▶" FontSize="16"/>
+									<TextBlock Text="START SIMULATION" FontSize="14" FontWeight="Bold"/>
+								</StackPanel>
+							</Button>
+
+							<Button Command="{Binding StopSimulationCommand}" 
+									Height="50" CornerRadius="10" Classes="danger-button">
+								<StackPanel Orientation="Horizontal" Spacing="10">
+									<TextBlock Text="⏸" FontSize="16"/>
+									<TextBlock Text="STOP SIMULATION" FontSize="14" FontWeight="Bold"/>
+								</StackPanel>
+							</Button>
+
+							<Button Command="{Binding ResetSimulationCommand}" 
+									Height="50" CornerRadius="10" Classes="warning-button">
+								<StackPanel Orientation="Horizontal" Spacing="10">
+									<TextBlock Text="↻" FontSize="16"/>
+									<TextBlock Text="RESET SYSTEM" FontSize="14" FontWeight="Bold"/>
+								</StackPanel>
+							</Button>
+						</StackPanel>
+
+						<!-- Speed Control -->
+						<StackPanel Spacing="12">
+							<TextBlock Text="SIMULATION SPEED" FontSize="14" FontWeight="Bold"
+									  Foreground="#1ABC9C" Margin="0,10,0,10"/>
+
+							<UniformGrid Columns="2" Rows="2" ColumnSpacing="8" RowSpacing="8">
+								<Button Command="{Binding SetSlowSpeedCommand}" 
+										Classes="speed-button" Classes.selected="{Binding IsSlowSpeed}">
+									<TextBlock Text="1x" FontSize="14" FontWeight="Bold"/>
+								</Button>
+								<Button Command="{Binding SetMediumSpeedCommand}" 
+										Classes="speed-button" Classes.selected="{Binding IsMediumSpeed}">
+									<TextBlock Text="10x" FontSize="14" FontWeight="Bold"/>
+								</Button>
+								<Button Command="{Binding SetFastSpeedCommand}" 
+										Classes="speed-button" Classes.selected="{Binding IsFastSpeed}">
+									<TextBlock Text="50x" FontSize="14" FontWeight="Bold"/>
+								</Button>
+								<Button Command="{Binding SetUltraFastSpeedCommand}" 
+										Classes="speed-button" Classes.selected="{Binding IsUltraFastSpeed}">
+									<TextBlock Text="100x" FontSize="14" FontWeight="Bold"/>
+								</Button>
+							</UniformGrid>
+						</StackPanel>
+
+						<!-- Parameters Configuration -->
+						<StackPanel Spacing="15">
+							<TextBlock Text="SYSTEM PARAMETERS" FontSize="14" FontWeight="Bold"
+									  Foreground="#1ABC9C" Margin="0,10,0,10"/>
+
+							<!-- Stations & Slots -->
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*"/>
+									<ColumnDefinition Width="*"/>
+								</Grid.ColumnDefinitions>
+								<StackPanel Grid.Column="0" Margin="0,0,5,0">
+									<TextBlock Text="STATIONS" FontSize="11" Foreground="#95A5A6" Margin="0,0,0,5"/>
+									<NumericUpDown Value="{Binding Parameters.NumberOfStations}" 
+												  Minimum="1" Maximum="8" Classes="modern-numeric"/>
+								</StackPanel>
+								<StackPanel Grid.Column="1" Margin="5,0,0,0">
+									<TextBlock Text="SLOTS/STATION" FontSize="11" Foreground="#95A5A6" Margin="0,0,0,5"/>
+									<NumericUpDown Value="{Binding Parameters.SlotsPerStation}" 
+												  Minimum="2" Maximum="10" Classes="modern-numeric"/>
+								</StackPanel>
+							</Grid>
+
+							<!-- Duration & Rush Hour -->
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*"/>
+									<ColumnDefinition Width="*"/>
+								</Grid.ColumnDefinitions>
+								<StackPanel Grid.Column="0" Margin="0,0,5,0">
+									<TextBlock Text="DURATION (H)" FontSize="11" Foreground="#95A5A6" Margin="0,0,0,5"/>
+									<NumericUpDown Value="{Binding Parameters.SimulationDurationHours}" 
+												  Minimum="1" Maximum="24" Classes="modern-numeric"/>
+								</StackPanel>
+								<StackPanel Grid.Column="1" Margin="5,0,0,0">
+									<TextBlock Text="RUSH MULT." FontSize="11" Foreground="#95A5A6" Margin="0,0,0,5"/>
+									<NumericUpDown Value="{Binding Parameters.RushHourMultiplier}" 
+												  Minimum="1" Maximum="5" Increment="0.1" FormatString="F1" 
+												  Classes="modern-numeric"/>
+								</StackPanel>
+							</Grid>
+
+							<!-- Arrival Rates -->
+							<StackPanel>
+								<TextBlock Text="CARS/HOUR" FontSize="11" Foreground="#95A5A6" Margin="0,0,0,5"/>
+								<NumericUpDown Value="{Binding Parameters.ArrivalRateCarsPerHour}" 
+											  Minimum="0" Maximum="30" Classes="modern-numeric"/>
+							</StackPanel>
+
+							<Grid>
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*"/>
+									<ColumnDefinition Width="*"/>
+								</Grid.ColumnDefinitions>
+								<StackPanel Grid.Column="0" Margin="0,0,5,0">
+									<TextBlock Text="TRUCKS/HOUR" FontSize="11" Foreground="#95A5A6" Margin="0,0,0,5"/>
+									<NumericUpDown Value="{Binding Parameters.ArrivalRateTrucksPerHour}" 
+												  Minimum="0" Maximum="20" Classes="modern-numeric"/>
+								</StackPanel>
+								<StackPanel Grid.Column="1" Margin="5,0,0,0">
+									<TextBlock Text="BUSES/HOUR" FontSize="11" Foreground="#95A5A6" Margin="0,0,0,5"/>
+									<NumericUpDown Value="{Binding Parameters.ArrivalRateBusesPerHour}" 
+												  Minimum="0" Maximum="15" Classes="modern-numeric"/>
+								</StackPanel>
+							</Grid>
+						</StackPanel>
+
+					</StackPanel>
+				</ScrollViewer>
+			</Border>
+
+			<!-- Center - Charging Stations -->
+			<Border Grid.Column="1" Background="#1A1F2E" Margin="5,0,5,10" CornerRadius="15">
+				<Grid>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="*"/>
+					</Grid.RowDefinitions>
+
+					<!-- Header -->
+					<Border Grid.Row="0" Background="#16202B" Padding="20,15" CornerRadius="15,15,0,0">
+						<TextBlock Text="🚗 ACTIVE CHARGING STATIONS" FontSize="16" FontWeight="Bold"
+								  Foreground="White" HorizontalAlignment="Center" LetterSpacing="2"/>
+					</Border>
+
+					<!-- Stations Grid -->
+					<ScrollViewer Grid.Row="1" Padding="15">
+						<ItemsControl ItemsSource="{Binding Stations}">
+							<ItemsControl.ItemsPanel>
+								<ItemsPanelTemplate>
+									<WrapPanel Orientation="Horizontal" HorizontalAlignment="Center"/>
+								</ItemsPanelTemplate>
+							</ItemsControl.ItemsPanel>
+							<ItemsControl.ItemTemplate>
+								<DataTemplate>
+									<views:AnimatedStationView Station="{Binding}" Margin="8"/>
+								</DataTemplate>
+							</ItemsControl.ItemTemplate>
+						</ItemsControl>
+					</ScrollViewer>
+				</Grid>
+			</Border>
+
+			<!-- Right Analytics Panel -->
+			<Border Grid.Column="2" Background="#1A1F2E" Margin="5,0,10,10" CornerRadius="15">
+				<ScrollViewer Padding="20">
+					<StackPanel Spacing="20">
+
+						<!-- Real-time Metrics -->
+						<StackPanel Spacing="15">
+							<TextBlock Text="📊 PERFORMANCE METRICS" FontSize="14" FontWeight="Bold"
+									  Foreground="#1ABC9C" Margin="0,0,0,10"/>
+
+							<!-- Metric Cards -->
+							<Border Background="#16202B" CornerRadius="10" Padding="15">
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="*"/>
+										<ColumnDefinition Width="Auto"/>
+									</Grid.ColumnDefinitions>
+									<TextBlock Text="Total Processed" FontSize="12" Foreground="#95A5A6"/>
+									<TextBlock Grid.Column="1" Text="{Binding Statistics.TotalVehiclesProcessed}" 
+											  FontSize="18" FontWeight="Bold" Foreground="#1ABC9C"/>
+								</Grid>
+							</Border>
+
+							<Border Background="#16202B" CornerRadius="10" Padding="15">
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="*"/>
+										<ColumnDefinition Width="Auto"/>
+									</Grid.ColumnDefinitions>
+									<TextBlock Text="Total Arrivals" FontSize="12" Foreground="#95A5A6"/>
+									<TextBlock Grid.Column="1" Text="{Binding Statistics.TotalVehiclesGenerated}" 
+											  FontSize="18" FontWeight="Bold" Foreground="#3498DB"/>
+								</Grid>
+							</Border>
+
+							<Border Background="#16202B" CornerRadius="10" Padding="15">
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="*"/>
+										<ColumnDefinition Width="Auto"/>
+									</Grid.ColumnDefinitions>
+									<TextBlock Text="Energy Delivered" FontSize="12" Foreground="#95A5A6"/>
+									<TextBlock Grid.Column="1" Text="{Binding TotalEnergyDelivered}" 
+											  FontSize="18" FontWeight="Bold" Foreground="#F39C12"/>
+								</Grid>
+							</Border>
+
+							<Border Background="#16202B" CornerRadius="10" Padding="15">
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="*"/>
+										<ColumnDefinition Width="Auto"/>
+									</Grid.ColumnDefinitions>
+									<TextBlock Text="System Power" FontSize="12" Foreground="#95A5A6"/>
+									<TextBlock Grid.Column="1" Text="{Binding SystemPowerOutput}" 
+											  FontSize="18" FontWeight="Bold" Foreground="#E74C3C"/>
+								</Grid>
+							</Border>
+
+							<Border Background="#16202B" CornerRadius="10" Padding="15">
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="*"/>
+										<ColumnDefinition Width="Auto"/>
+									</Grid.ColumnDefinitions>
+									<TextBlock Text="Avg Wait Time" FontSize="12" Foreground="#95A5A6"/>
+									<TextBlock Grid.Column="1" 
+											  Text="{Binding Statistics.AverageWaitingTime, StringFormat='{}{0:F1} min'}" 
+											  FontSize="18" FontWeight="Bold" Foreground="#9B59B6"/>
+								</Grid>
+							</Border>
+
+							<Border Background="#16202B" CornerRadius="10" Padding="15">
+								<Grid>
+									<Grid.ColumnDefinitions>
+										<ColumnDefinition Width="*"/>
+										<ColumnDefinition Width="Auto"/>
+									</Grid.ColumnDefinitions>
+									<TextBlock Text="Efficiency" FontSize="12" Foreground="#95A5A6"/>
+									<TextBlock Grid.Column="1" Text="{Binding EfficiencyText}" 
+											  FontSize="18" FontWeight="Bold" Foreground="#1ABC9C"/>
+								</Grid>
+							</Border>
+						</StackPanel>
+
+						<!-- Chart: Utilization Trend -->
+						<StackPanel Spacing="10">
+							<TextBlock Text="📈 UTILIZATION TREND" FontSize="14" FontWeight="Bold"
+									  Foreground="#1ABC9C"/>
+							<Border Background="#16202B" CornerRadius="10" Padding="15" Height="180">
+								<Canvas x:Name="UtilizationChart"/>
+							</Border>
+						</StackPanel>
+
+						<!-- Chart: Power Output -->
+						<StackPanel Spacing="10">
+							<TextBlock Text="⚡ POWER OUTPUT (kW)" FontSize="14" FontWeight="Bold"
+									  Foreground="#1ABC9C"/>
+							<Border Background="#16202B" CornerRadius="10" Padding="15" Height="180">
+								<Canvas x:Name="PowerChart"/>
+							</Border>
+						</StackPanel>
+
+						<!-- Chart: Queue Length -->
+						<StackPanel Spacing="10">
+							<TextBlock Text="👥 QUEUE LENGTH" FontSize="14" FontWeight="Bold"
+									  Foreground="#1ABC9C"/>
+							<Border Background="#16202B" CornerRadius="10" Padding="15" Height="180">
+								<Canvas x:Name="QueueChart"/>
+							</Border>
+						</StackPanel>
+
+					</StackPanel>
+				</ScrollViewer>
+			</Border>
+
+		</Grid>
+	</Grid>
+
+	<!-- Styles -->
+	<Window.Styles>
+		<!-- Primary Button -->
+		<Style Selector="Button.primary-button">
+			<Setter Property="Background">
+				<LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+					<GradientStop Offset="0" Color="#1ABC9C"/>
+					<GradientStop Offset="1" Color="#16A085"/>
+				</LinearGradientBrush>
+			</Setter>
+			<Setter Property="Foreground" Value="White"/>
+			<Setter Property="BorderThickness" Value="0"/>
+		</Style>
+
+		<Style Selector="Button.primary-button:pointerover">
+			<Setter Property="Opacity" Value="0.9"/>
+		</Style>
+
+		<!-- Danger Button -->
+		<Style Selector="Button.danger-button">
+			<Setter Property="Background">
+				<LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+					<GradientStop Offset="0" Color="#E74C3C"/>
+					<GradientStop Offset="1" Color="#C0392B"/>
+				</LinearGradientBrush>
+			</Setter>
+			<Setter Property="Foreground" Value="White"/>
+			<Setter Property="BorderThickness" Value="0"/>
+		</Style>
+
+		<!-- Warning Button -->
+		<Style Selector="Button.warning-button">
+			<Setter Property="Background">
+				<LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+					<GradientStop Offset="0" Color="#F39C12"/>
+					<GradientStop Offset="1" Color="#E67E22"/>
+				</LinearGradientBrush>
+			</Setter>
+			<Setter Property="Foreground" Value="White"/>
+			<Setter Property="BorderThickness" Value="0"/>
+		</Style>
+
+		<!-- Speed Button -->
+		<Style Selector="Button.speed-button">
+			<Setter Property="Background" Value="#2C3E50"/>
+			<Setter Property="Foreground" Value="White"/>
+			<Setter Property="BorderThickness" Value="2"/>
+			<Setter Property="BorderBrush" Value="#34495E"/>
+			<Setter Property="Height" Value="45"/>
+		</Style>
+
+		<Style Selector="Button.speed-button.selected">
+			<Setter Property="Background" Value="#3498DB"/>
+			<Setter Property="BorderBrush" Value="#2980B9"/>
+		</Style>
+
+		<!-- Modern Numeric -->
+		<Style Selector="NumericUpDown.modern-numeric">
+			<Setter Property="Height" Value="40"/>
+			<Setter Property="Background" Value="#2C3E50"/>
+			<Setter Property="Foreground" Value="White"/>
+			<Setter Property="BorderBrush" Value="#34495E"/>
+			<Setter Property="BorderThickness" Value="0,0,0,2"/>
+			<Setter Property="CornerRadius" Value="8"/>
+		</Style>
+
+	</Window.Styles>
+
+</Window>

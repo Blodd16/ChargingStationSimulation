@@ -1,0 +1,55 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="ChargingStationSimulation.App"
+             RequestedThemeVariant="Dark">
+
+    <Application.Styles>
+        <FluentTheme />
+
+        <!-- Global styles-->
+        <Style Selector="Window">
+            <Setter Property="FontFamily" Value="Segoe UI, Arial, sans-serif"/>
+        </Style>
+
+        <Style Selector="TextBlock">
+            <Setter Property="FontSize" Value="13"/>
+        </Style>
+
+        <Style Selector="Button">
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Padding" Value="15,5"/>
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <Style Selector="Border">
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+
+        <!-- Hover effects -->
+        <Style Selector="Border:pointerover">
+            <Setter Property="BorderBrush" Value="#3498DB"/>
+        </Style>
+
+        <Style Selector="Button:pointerover">
+            <Setter Property="Opacity" Value="0.9"/>
+        </Style>
+
+        <!-- Smooth transitions for opacity and colors -->
+        <Style Selector="Button">
+            <Setter Property="Transitions">
+                <Transitions>
+                    <DoubleTransition Property="Opacity" Duration="0:0:0.2"/>
+                </Transitions>
+            </Setter>
+        </Style>
+
+        <Style Selector="Border">
+            <Setter Property="Transitions">
+                <Transitions>
+                    <BrushTransition Property="Background" Duration="0:0:0.3"/>
+                </Transitions>
+            </Setter>
+        </Style>
+    </Application.Styles>
+</Application>
