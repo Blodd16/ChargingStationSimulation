@@ -27,17 +27,7 @@ Vehicles drive in, park, charge, and drive out — fully animated and simulated.
 - 🎨 **Smooth animations** — cubic ease-in-out transitions for all vehicle movements
 - 🌙 **Dark UI theme** — professional dark design with glowing green accents
 - 🖥️ **Cross-platform** — runs on Windows, Linux, and macOS via Avalonia UI
-
 ---
-
-## 📸 Screenshots
-
-| Horizontal Mode | Vertical Mode |
-|:-:|:-:|
-| ![Horizontal](docs/screenshots/horizontal.png) | ![Vertical](docs/screenshots/vertical.png) |
-
-> _Add your own screenshots to `docs/screenshots/`_
-
 ---
 
 ## 🚀 Getting Started
