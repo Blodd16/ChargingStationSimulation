@@ -1,4 +1,6 @@
 # ⚡ Charging Station Simulation
+<img width="1907" height="975" alt="Charging" src="https://github.com/user-attachments/assets/424e8ea1-128c-49ed-a2a5-e6cb9b2fd11c" />
+
 
 <div align="center">
 
@@ -38,23 +40,8 @@ Vehicles drive in, park, charge, and drive out — fully animated and simulated.
 - [Visual Studio 2022](https://visualstudio.microsoft.com/) or [JetBrains Rider](https://www.jetbrains.com/rider/)
 - Avalonia UI extension (for Visual Studio)
 
-### Installation
+  <img width="1908" height="978" alt="ChargingS" src="https://github.com/user-attachments/assets/e33d958e-c244-487b-b123-14b1db4af5d8" />
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/your-username/ChargingStationSimulation.git
-
-# 2. Navigate to project folder
-cd ChargingStationSimulation
-
-# 3. Restore dependencies
-dotnet restore
-
-# 4. Run the project
-dotnet run
-```
-
----
 
 ## 🏗️ Architecture
 
